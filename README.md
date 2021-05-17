@@ -1,6 +1,6 @@
 # ¡Bienvenido(a) nuestro proyecto final del curso! 🚀
 
-![.NET Core Banner](https://www.mancomun.gal/wp-content/uploads/2019/04/apacheNetBeans.jpeg)
+![.NET Core Banner](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.fixedbuffer.com%2Fwp-content%2Fuploads%2F2019%2F05%2Fnetcore.png&imgrefurl=https%3A%2F%2Fwww.fixedbuffer.com%2Fcomo-crear-un-servicio-net-core-multiplataforma%2F&tbnid=aUG9GTnrDOXgVM&vet=12ahUKEwju7vTXxM_wAhUbN7kGHRPMCUoQMygAegUIARCfAQ..i&docid=1L5qwLfggquKNM&w=750&h=300&q=.net%20core%20banner&ved=2ahUKEwju7vTXxM_wAhUbN7kGHRPMCUoQMygAegUIARCfAQ)
 
 Realizado por Alvaro Rivera, Darlin Lopez, Joel Ninasivincha, Maricielo Zamora, y Angel Mejia.
 
