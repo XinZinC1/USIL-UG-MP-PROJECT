@@ -1,6 +1,6 @@
 # ¡Bienvenido(a) nuestro proyecto final del curso! 🚀
 
-![.NET Core Banner]()
+![.NET Core Banner](https://www.campusmvp.es/recursos/image.axd?picture=/Logos-Banners/Entity-Framework-Core.png)
 
 Realizado por Omar, Darlin, Xiang y mi persona, Angel.
 
