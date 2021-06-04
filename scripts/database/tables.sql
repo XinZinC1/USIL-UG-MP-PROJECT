@@ -15,10 +15,10 @@ GO
 
 create table ubicacion
 (
-	id_ubicacion int not null, -- PRIMARY KEY
-	region varchar(12) not null,
-	ciudad varchar(16) not null,
-	direccion varchar(48) not null
+    id_ubicacion int not null, -- PRIMARY KEY
+    region varchar(12) not null,
+    ciudad varchar(16) not null,
+    direccion varchar(48) not null
 );
 
 GO
