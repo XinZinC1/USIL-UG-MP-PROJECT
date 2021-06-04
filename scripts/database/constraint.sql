@@ -18,7 +18,7 @@ GO
 
 ALTER TABLE especialista
 ADD CONSTRAINT pk_especialista_id PRIMARY KEY (id_especialista),
-CONSTRAINT fk_especialista_ubicacion FOREIGN KEY (id_ubicacion) REFERENCES ubicacion(id_ubicacion);
+    CONSTRAINT fk_especialista_ubicacion FOREIGN KEY (id_ubicacion) REFERENCES ubicacion(id_ubicacion);
 GO
 
 -- TABLA ASUNTOS DE CITAS
@@ -65,5 +65,4 @@ GO
 ALTER TABLE historial_clinico
 ADD CONSTRAINT pk_historial_id PRIMARY KEY (id_historial),
     CONSTRAINT fk_historial_diagnostico FOREIGN KEY (id_diagnostico) REFERENCES diagnostico_cita (id_diagnostico);
-
 GO
