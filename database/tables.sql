@@ -1,3 +1,4 @@
+
 -- CREACIÓN DE LA BASE DE DATOS
 
 CREATE DATABASE bdkinema
@@ -149,6 +150,7 @@ create table diagnostico_cita
 GO
 
 ALTER TABLE diagnostico_cita
+
 ADD CONSTRAINT pk_diagnostico_id PRIMARY KEY (id_diagnostico),
     CONSTRAINT fk_diagnostico_cita FOREIGN KEY (id_cita) ReFERENCES cita(id_cita);
 
