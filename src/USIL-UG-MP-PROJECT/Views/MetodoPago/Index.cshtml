@@ -1,0 +1,60 @@
+﻿@model IEnumerable<USIL_UG_MP_PROJECT.Models.MetodoPago>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    ViewData["Title"] = "Métodos de Pago";
+    int counter = 0;
+}
+
+<div class="container">
+
+    <h1>Listado de Métodos de Pago</h1>
+
+    <h2><a asp-action="Insert">Nuevo Método de Pago</a></h2>
+
+    <div>
+        <input class="form-control" id="myInput" type="text" placeholder="Search..." />
+    </div>
+    <br />
+    <table class="table table-bordered">
+        <thead>
+
+            <tr>
+                <td scope="col">ID Método Pago</td>
+                <td scope="col">Empresa</td>
+                <td scope="col">Descripción</td>
+            </tr>
+
+        </thead>
+
+        <tbody id="myTable">
+
+            @foreach (var row in Model)
+            {
+                <tr>
+                    <td>@row.IdMetodo</td>
+                    <td>@row.Empresa</td>
+                    <td>@row.Descripcion</td>
+                </tr>
+                counter++;
+            }
+
+        </tbody>
+    </table>
+</div>
+
+<h2>Hay @(counter) registro(s)!</h2>
+
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>

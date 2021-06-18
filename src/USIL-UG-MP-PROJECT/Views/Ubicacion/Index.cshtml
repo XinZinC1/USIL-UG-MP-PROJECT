@@ -1,0 +1,62 @@
+﻿@model IEnumerable<USIL_UG_MP_PROJECT.Models.Ubicacion>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    ViewData["Title"] = "Ubicaciones";
+}
+
+<div class="container">
+
+    <h1>Listado de Ubicaciones</h1>
+
+    <h2><a asp-action="Insert">Nueva Ubicación</a></h2>
+
+    <div>
+        <h4>Busca un local</h4><br />
+        <input class="form-control" id="myInput" type="text" placeholder="Search..." />
+    </div>
+
+    <table class="table table-bordered">
+        <thead>
+
+            <tr>
+                <td scope="col">Código Ubicación</td>
+                <td scope="col">Región</td>
+                <td scope="col">Ciudad</td>
+                <td scope="col">Dirección</td>
+                <td scope="col">Editar</td>
+                <td scope="col">Eliminar</td>
+            </tr>
+
+        </thead>
+
+        <tbody id="myTable">
+
+            @foreach (var row in Model)
+            {
+                <tr>
+                    <td>@row.IdUbicacion</td>
+                    <td>@row.Region</td>
+                    <td>@row.Ciudad</td>
+                    <td>@row.Direccion</td>
+                    <td><a asp-action="Eliminar" asp-route-id="@row.IdUbicacion">Eliminar</a></td>
+                    <td><a asp-action="Editar" asp-route-id="@row.IdUbicacion">Editar</a></td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>

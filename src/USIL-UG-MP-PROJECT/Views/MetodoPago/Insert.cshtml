@@ -1,0 +1,35 @@
+﻿@model USIL_UG_MP_PROJECT.Models.MetodoPago
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+}
+
+<h4>Registrar una nuevo Método de Pago</h4>
+<form asp-controller="MetodoPago" asp-action="InsertMetodoPago" method="POST">
+
+    <div class="form-Group">
+        <label for="formGroupExampleInput">Id del Método Pago</label>
+        <input asp-for="IdMetodo" class="form-control" id="formGroupExampleInput" placeholder="Id Método Pago" autofocus />
+        <span asp-validation-for="IdMetodo" class="text-danger"></span>
+    </div>
+
+    <div class="form-Group">
+        <label for="formGroupExampleInput2">Nombre de la Empresa</label>
+        <input asp-for="Empresa" class="form-control" id="formGroupExampleInput2" placeholder="Empresa" />
+        <span asp-validation-for="Empresa" class="text-danger"></span>
+    </div>
+
+    <div class="form-Group">
+        <label for="formGroupExampleInput3">Descripción de la Empresa</label>
+        <input asp-for="Descripcion" class="form-control" id="formGroupExampleInput3" placeholder="Descripción" />
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
+    </div>
+
+    <br />
+    <div class="form-Group">
+        <button type="submit" class="btn btn-primary" value="btn" name="grabar">Registrar</button>
+    </div>
+
+</form>
